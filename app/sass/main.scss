@@ -1,6 +1,109 @@
 @import "_fonts";
 
-/*--------------------- Media Query --------------------*/
+$green: #2cbf6f;
+$pink: #ff1ba2;
+$blue: #0daefb;
+$white: #fff;
+
+/*--------------------- Total style ------------------*/
+
+body {
+    background: $white;
+}
+
+.bold-green {
+    color: $green;
+    font-weight: bold;
+}
+
+.bold-pink {
+    color: $pink;
+}
+
+.bold-blue {
+    @extend .bold-green;
+    color: $blue;
+}
+
+/*--------------------- Header -----------------------*/
+
+.header {
+    
+}
+
+/*--------------------- Section-1 --------------------*/
+
+.section-1 {
+    background: #eee;
+}
+
+/*--------------------- Section-2 --------------------*/
+
+.section-2 {
+    
+}
+
+/*--------------------- Section-3 --------------------*/
+
+.section-3 {
+    background: #eee;
+}
+
+/*--------------------- Section-4 --------------------*/
+
+.section-4 {
+    
+}
+
+/*--------------------- Section-5 --------------------*/
+
+.section-5 {
+    background: #eee;
+}
+
+/*--------------------- Section-6 --------------------*/
+
+.section-6 {
+    
+}
+
+/*--------------------- Section-7 --------------------*/
+
+.section-7 {
+    background: #eee;
+}
+
+/*--------------------- Section-8 --------------------*/
+
+.section-8 {
+    
+}
+
+/*--------------------- Section-9 --------------------*/
+
+.section-9 {
+    background: #eee;
+}
+
+/*--------------------- Section-10 -------------------*/
+
+.section-10 {
+    
+}
+
+/*--------------------- Section-11 -------------------*/
+
+.section-11 {
+    background: #eee;
+}
+
+/*--------------------- Footer -----------------------*/
+
+footer {
+    
+}
+
+/*--------------------- Media Query ------------------*/
 
 @import "_max-992";
 @import "_max-768";

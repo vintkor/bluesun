@@ -35,6 +35,7 @@ gulp.task('scripts', function() {
         'app/libs/jquery/dist/jquery.min.js', // Берем jQuery
         'app/libs/bootstrap/dist/js/bootstrap.min.js',
         'app/libs/wow.js',
+        'app/libs/owl.carousel/owl.carousel.js',
         'app/libs/jquery.maskedinput/dist/jquery.maskedinput.js',
         'app/libs/sweetalert/dist/sweetalert.min.js'
         ])

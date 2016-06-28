@@ -1,3 +1,37 @@
+// Выравнивание блоков по высоте
+function setEqualHeight(columns){var tallestcolumn = 0;columns.each(function(){
+	currentHeight = $(this).height();if(currentHeight > tallestcolumn){
+	tallestcolumn = currentHeight;}});columns.height(tallestcolumn);}
+
+	$(document).ready(function() {setEqualHeight($(".section-2--blocks"));});
+    $(document).ready(function() {setEqualHeight($(".section-6--blocks"));});
+	$(document).ready(function() {setEqualHeight($(".section-8--blocks"));});
+
+$(document).ready(function(){
+  $(".owl-carousel").owlCarousel({
+    loop:true,
+    margin:20,
+    lazyContent:true,
+    nav:true,
+    navText:[
+    	"<i class='nav-before'></i>",
+    	"<i class='nav-next'></i>"
+    ],
+    responsive:{
+        480:{
+            items:2
+        },
+        700:{
+            items:4
+        },
+        768:{
+            items:5
+        }
+    }
+  });
+});
+
+
 // // Анимация WOW.JS
 // wow = new WOW(
 // 	{

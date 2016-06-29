@@ -3,9 +3,14 @@ function setEqualHeight(columns){var tallestcolumn = 0;columns.each(function(){
 	currentHeight = $(this).height();if(currentHeight > tallestcolumn){
 	tallestcolumn = currentHeight;}});columns.height(tallestcolumn);}
 
-	$(document).ready(function() {setEqualHeight($(".section-2--blocks"));});
-    $(document).ready(function() {setEqualHeight($(".section-6--blocks"));});
-	$(document).ready(function() {setEqualHeight($(".section-8--blocks"));});
+	$(document).ready(function() {
+        setEqualHeight($(".section-2--blocks"));
+        setEqualHeight($(".section-6--blocks"));
+        setEqualHeight($(".section-8--blocks"));
+        setEqualHeight($(".section-10--blocks"));
+    });
+
+// OwlCarousel - slider
 
 $(document).ready(function(){
   $(".owl-carousel").owlCarousel({
@@ -30,6 +35,25 @@ $(document).ready(function(){
     }
   });
 });
+
+$(document).ready(function(){
+    var controls = {
+        video: $("#myvideo"),
+        playpause: $("#playpause")                 
+    };
+                
+    var video = controls.video[0];
+               
+    controls.playpause.click(function(){
+        if (video.paused) {
+            video.play();   
+        } else {
+            video.pause();
+        }
+                
+        $(this).toggleClass("paused"); 
+    });
+}); 
 
 
 // // Анимация WOW.JS
@@ -82,3 +106,26 @@ $(document).ready(function(){
 //         return false; // вырубаем стандартную отправку формы
 //     });
 // });
+
+
+// Яндекс карта в модале
+ymaps.ready(init);
+
+function init () {
+    var myMap = new ymaps.Map("yamaps", {
+            center: [50.435123, 30.356755],
+            zoom: 16
+        }),
+        myPlacemark = new ymaps.Placemark([50.435123, 30.356755], {
+            // Чтобы балун и хинт открывались на метке, необходимо задать ей определенные свойства.
+            balloonContentHeader: "Bluesun Украина",
+            balloonContentBody: "Используй солнечную панель и экономь до 5 раз уже сейчас!",
+            balloonContentFooter: "(095) или (068) или (063) + 5110077",
+            hintContent: "Bluesun Украина"
+        });
+
+    myMap.geoObjects.add(myPlacemark);
+    myMap.controls
+        // Кнопка изменения масштаба.
+        .add('zoomControl', { left: 5, top: 5 })
+}

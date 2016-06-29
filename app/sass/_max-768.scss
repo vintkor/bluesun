@@ -1,5 +1,177 @@
 @media (max-width: 768px) {
 
-	
+	/*--------------------- Header -----------------------*/
+
+	.header--call {
+	    text-align: center;
+	}
+
+	.header--address {
+		text-align: center;
+	}
+	.header--logo {
+		position: relative;
+		margin: 15px auto;
+	    width: 80%;
+	    max-width: 360px;
+	    height: auto;
+	}
+
+	/*--------------------- Section-1 --------------------*/
+
+	.section-1 {
+	    padding: 70px 0;
+	}
+	/*--------------------- Section-2 --------------------*/
+
+	.section-2 {
+	    padding: 70px 0;
+	}
+
+	/*--------------------- Section-3 --------------------*/
+
+	.section-3 {
+		padding: 70px 0 0;
+	    .container {
+	        img {
+	            display: none;
+	        }
+	    }
+	    p {
+	    	margin-bottom: 70px;
+	    }
+	}
+
+	/*--------------------- Section-4 --------------------*/
+
+	.section-4 {
+		overflow: hidden;
+	    margin-top: 0px;
+	    margin-bottom: 0px;
+	    .section-4--wrapper {
+	      height: auto;
+	      padding: 15px 25px;
+	    }
+	}
+
+	.section-4--p {
+	    line-height: 28px;
+	    font-family: "OpenSans-Light";
+	    color: #666;
+	}
+
+	/*--------------------- Section-5 --------------------*/
+
+	.section-5 {
+	    padding-top: 70px;
+	}
+
+	/*--------------------- Section-6 --------------------*/
+
+	.section-6 {
+		overflow: hidden;
+	}	
+	.section-6--p {
+	    padding-bottom: 30px;
+	}
+
+
+	/*--------------------- Section-7 --------------------*/
+
+	.video {
+	    // position: relative;
+	    // width: 100%;
+	    // max-width: 840px;
+	    // //background: rgba(#d22, .5);
+	    // margin: 0 auto;
+	    // .section-7--hands {
+	    // 	width: 100%;
+	    // }
+	    // video {
+	    //     position: absolute;
+	    //     top: 26px;
+	    //     left: 190px;
+	    //     width: 100%;
+	    //     height: 100%;
+	    //     max-width: 477px;
+	    //     max-height: 358px;
+	    // }
+	    // #playpause {
+	    //     position: absolute;
+	    //     top: 145px;
+	    //     left: 230px;
+	    //     width: 400px;
+	    //     height: 100px;
+	    //     background: url("../img/play.png");
+	    //     &:hover {
+	    //         cursor: pointer;
+	    //         background: url("../img/play-hover.png");
+	    //     }
+	    // }
+	    display: none;
+	}
+
+	/*--------------------- Section-8 --------------------*/
+
+	.section-8 {
+	    padding: 70px 0;
+	}
+
+	.section-8--blocks {
+	    border-right: 0px solid #dfe2e5;
+	}
+
+	/*--------------------- Section-9 --------------------*/
+
+	.section-9 {
+	    overflow: scroll;
+	}
+
+	.section-9--table {
+	    thead {
+	        td {
+	            padding: 20px;
+	        }
+	    }
+	    tbody {
+	        td {
+	            padding: 10px;
+	            &:last-child {
+	                padding-left: 56px;
+	            }
+	        }
+	    }
+	}
+
+	/*--------------------- Section-10 -------------------*/
+
+	.section-10 {
+	    padding: 70px 0;
+	}
+
+	/*--------------------- Section-11 -------------------*/
+
+	.section-11 {
+	    padding: 70px 0;
+	}
+
+	/*--------------------- Footer -----------------------*/
+
+	footer {
+	    padding: 70px 0;
+	}
+
+	.footer--a-make-order,
+	.footer--a-question {
+	    padding: 16px 50px;
+	}
+
+	.left {
+		margin-bottom: 60px;
+		text-align: center;
+	}
+	.right {
+		text-align: center;
+	}
 	
 }

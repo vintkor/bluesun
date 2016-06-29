@@ -704,3 +704,126 @@ footer {
   padding: 20px; }
 
 /*--------------------- Media Query ------------------*/
+@media (max-width: 992px) {
+  /*--------------------- Header -----------------------*/
+  header {
+    padding: 18px 0; }
+  .header--phone {
+    font-size: 32px;
+    padding-left: 10px; }
+  .header--logo {
+    width: 100%;
+    height: auto;
+    margin: 30px 0; }
+  /*--------------------- Section-1 --------------------*/
+  /*--------------------- Section-2 --------------------*/
+  .section-2--img {
+    margin-bottom: 40px; }
+  /*--------------------- Section-3 --------------------*/
+  /*--------------------- Section-4 --------------------*/
+  .section-4 .section-4--wrapper {
+    padding: 35px 35px; }
+  /*--------------------- Section-5 --------------------*/
+  /*--------------------- Section-6 --------------------*/
+  .section-6--blocks {
+    padding-top: 10px;
+    padding-left: 20px; }
+  .section-6--p:before {
+    left: -12px;
+    top: 25px; }
+  /*--------------------- Section-7 --------------------*/
+  .section-7 {
+    overflow: hidden; }
+  .section-7--blocks img {
+    padding-left: 20px; }
+  /*--------------------- Section-8 --------------------*/
+  /*--------------------- Section-9 --------------------*/
+  /*--------------------- Section-10 -------------------*/
+  /*--------------------- Section-11 -------------------*/
+  /*--------------------- Footer -----------------------*/
+  .footer--a-look-on-maps {
+    position: relative;
+    bottom: 0px; }
+  .footer--address {
+    font-size: 18px;
+    line-height: 32px; } }
+
+@media (max-width: 768px) {
+  /*--------------------- Header -----------------------*/
+  .header--call {
+    text-align: center; }
+  .header--address {
+    text-align: center; }
+  .header--logo {
+    position: relative;
+    margin: 15px auto;
+    width: 80%;
+    max-width: 360px;
+    height: auto; }
+  /*--------------------- Section-1 --------------------*/
+  .section-1 {
+    padding: 70px 0; }
+  /*--------------------- Section-2 --------------------*/
+  .section-2 {
+    padding: 70px 0; }
+  /*--------------------- Section-3 --------------------*/
+  .section-3 {
+    padding: 70px 0 0; }
+    .section-3 .container img {
+      display: none; }
+    .section-3 p {
+      margin-bottom: 70px; }
+  /*--------------------- Section-4 --------------------*/
+  .section-4 {
+    overflow: hidden;
+    margin-top: 0px;
+    margin-bottom: 0px; }
+    .section-4 .section-4--wrapper {
+      height: auto;
+      padding: 15px 25px; }
+  .section-4--p {
+    line-height: 28px;
+    font-family: "OpenSans-Light";
+    color: #666; }
+  /*--------------------- Section-5 --------------------*/
+  .section-5 {
+    padding-top: 70px; }
+  /*--------------------- Section-6 --------------------*/
+  .section-6 {
+    overflow: hidden; }
+  .section-6--p {
+    padding-bottom: 30px; }
+  /*--------------------- Section-7 --------------------*/
+  .video {
+    display: none; }
+  /*--------------------- Section-8 --------------------*/
+  .section-8 {
+    padding: 70px 0; }
+  .section-8--blocks {
+    border-right: 0px solid #dfe2e5; }
+  /*--------------------- Section-9 --------------------*/
+  .section-9 {
+    overflow: scroll; }
+  .section-9--table thead td {
+    padding: 20px; }
+  .section-9--table tbody td {
+    padding: 10px; }
+    .section-9--table tbody td:last-child {
+      padding-left: 56px; }
+  /*--------------------- Section-10 -------------------*/
+  .section-10 {
+    padding: 70px 0; }
+  /*--------------------- Section-11 -------------------*/
+  .section-11 {
+    padding: 70px 0; }
+  /*--------------------- Footer -----------------------*/
+  footer {
+    padding: 70px 0; }
+  .footer--a-make-order,
+  .footer--a-question {
+    padding: 16px 50px; }
+  .left {
+    margin-bottom: 60px;
+    text-align: center; }
+  .right {
+    text-align: center; } }

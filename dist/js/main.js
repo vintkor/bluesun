@@ -1,7 +1,14 @@
 // Выравнивание блоков по высоте
-function setEqualHeight(columns){var tallestcolumn = 0;columns.each(function(){
-	currentHeight = $(this).height();if(currentHeight > tallestcolumn){
-	tallestcolumn = currentHeight;}});columns.height(tallestcolumn);}
+function setEqualHeight(columns){
+    var tallestcolumn = 0;
+    columns.each(function(){
+    	currentHeight = $(this).height();
+        if(currentHeight > tallestcolumn){
+    	   tallestcolumn = currentHeight;
+        }
+    });
+    columns.height(tallestcolumn);
+}
 
 	$(document).ready(function() {
         setEqualHeight($(".section-2--blocks"));
@@ -95,7 +102,7 @@ $(document).ready(function() { // вся магия после загрузки 
                 dataType: 'json', // ответ ждем в json формате
                 data: data, // данные для отправки
                 beforeSend: function(data) { // событие до отправки
-                    form.find('button').attr('disabled', 'disabled'); // например, отключим кнопку, чтобы не жали по 100 раз
+                    form.find('.send').attr('disabled', 'disabled'); // например, отключим кнопку, чтобы не жали по 100 раз
                 },
                 complete: function(data) { // событие после любого исхода
                     swal("Отлично!", "Менеджер-консультант свяжется с Вами в ближайшее время.", "success");

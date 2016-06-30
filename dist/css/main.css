@@ -264,7 +264,6 @@ h1 {
 .section-5 {
   padding-top: 210px;
   padding-bottom: 570px;
-  overflow: hidden;
   background-image: url("../img/sec-5-1.png"), -webkit-linear-gradient(315deg, #a1dafb, #eaf7ff);
   background-image: url("../img/sec-5-1.png"), linear-gradient(135deg, #a1dafb, #eaf7ff);
   background-position: 50% 100%;
@@ -473,7 +472,8 @@ h1 {
   background-image: url("../img/sec-9-bg.png"), -webkit-linear-gradient(110deg, #b2e1fc 0%, #f8fcff 62%);
   background-image: url("../img/sec-9-bg.png"), linear-gradient(340deg, #b2e1fc 0%, #f8fcff 62%);
   background-position: 50% 100%;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  position: relative; }
 
 .section-9--h2 {
   font-family: "OpenSans-Extrabold";
@@ -535,6 +535,13 @@ h1 {
       font-family: "OpenSans-Bold";
       font-size: 16px;
       text-align: center; }
+    .section-9--table tbody td .tada {
+      display: inline-block; }
+
+.bank {
+  position: absolute;
+  right: 0;
+  top: 50%; }
 
 /*--------------------- Section-10 -------------------*/
 .section-10 {
@@ -577,7 +584,7 @@ h1 {
     font-size: 16px;
     line-height: 28px;
     list-style-image: url("../img/circle.png");
-    margin-left: -20px;
+    margin: 0 auto;
     margin-bottom: 27px;
     max-width: 740px; }
     .section-11 li span {
@@ -591,13 +598,14 @@ h1 {
   font-size: 36px;
   line-height: 42px;
   max-width: 790px;
+  margin: 0 auto;
   margin-bottom: 62px; }
   .section-11--h2 span {
     font-family: "Roboto-Black"; }
 
 /*--------------------- Footer -----------------------*/
 footer {
-  padding: 90px 0 180px; }
+  padding: 90px 0; }
 
 .email a {
   color: #00a6bd;
@@ -694,6 +702,13 @@ footer {
 .footer--a-question {
   color: #666; }
 
+.eldom {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 100px; }
+  .eldom a {
+    color: #17a858; }
+
 /*----------- Modal -------------*/
 .bs-example-modal-lg1 {
   text-align: center; }
@@ -702,6 +717,13 @@ footer {
   width: 100%;
   height: 500px;
   padding: 20px; }
+
+.btn-default {
+  color: #363636;
+  border-color: #363636; }
+  .btn-default:hover {
+    border-color: #363636;
+    color: #363636; }
 
 /*--------------------- Media Query ------------------*/
 @media (max-width: 992px) {
@@ -715,6 +737,8 @@ footer {
     width: 100%;
     height: auto;
     margin: 30px 0; }
+  .header--email {
+    margin-right: 0; }
   /*--------------------- Section-1 --------------------*/
   /*--------------------- Section-2 --------------------*/
   .section-2--img {

@@ -116,7 +116,9 @@ header {
   margin: 24px 0;
   position: relative;
   z-index: 1;
-  display: block; }
+  display: block;
+  width: 100%;
+  height: auto; }
   .header--logo:after {
     content: "";
     position: absolute;
@@ -537,11 +539,13 @@ h1 {
       text-align: center; }
     .section-9--table tbody td .tada {
       display: inline-block; }
-
-.bank {
-  position: absolute;
-  right: 0;
-  top: 50%; }
+  .section-9--table tbody .last td {
+    background: #eaf9fd;
+    padding: 10px;
+    vertical-align: middle;
+    text-align: right; }
+    .section-9--table tbody .last td p {
+      margin-bottom: 0; }
 
 /*--------------------- Section-10 -------------------*/
 .section-10 {
@@ -784,6 +788,8 @@ footer {
     width: 80%;
     max-width: 360px;
     height: auto; }
+  .header--phone {
+    font-size: 52px; }
   /*--------------------- Section-1 --------------------*/
   .section-1 {
     padding: 70px 0; }
@@ -826,14 +832,25 @@ footer {
   .section-8--blocks {
     border-right: 0px solid #dfe2e5; }
   /*--------------------- Section-9 --------------------*/
-  .section-9 {
-    overflow: scroll; }
-  .section-9--table thead td {
-    padding: 20px; }
-  .section-9--table tbody td {
-    padding: 10px; }
-    .section-9--table tbody td:last-child {
-      padding-left: 56px; }
+  .section-9--table {
+    background: #eaf9fd;
+    width: 100%; }
+    .section-9--table thead td {
+      font-size: 12px;
+      padding: 10px; }
+      .section-9--table thead td:nth-child(1) {
+        font-size: 12px; }
+      .section-9--table thead td:nth-child(2) span, .section-9--table thead td:nth-child(3) span {
+        font-size: 12px; }
+    .section-9--table tbody td {
+      padding: 10px; }
+      .section-9--table tbody td:last-child {
+        padding-left: 10px;
+        font-size: 14px; }
+      .section-9--table tbody td:first-child {
+        font-size: 12px; }
+      .section-9--table tbody td:nth-child(2) {
+        font-size: 12px; }
   /*--------------------- Section-10 -------------------*/
   .section-10 {
     padding: 70px 0; }

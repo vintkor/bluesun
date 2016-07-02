@@ -10,13 +10,13 @@ function setEqualHeight(columns){
     columns.height(tallestcolumn);
 }
 
-	$(document).ready(function() {
-        setEqualHeight($(".section-2--blocks"));
-        setEqualHeight($(".section-6--blocks"));
-        setEqualHeight($(".section-7--blocks"));
-        setEqualHeight($(".section-8--blocks"));
-        setEqualHeight($(".section-10--blocks"));
-    });
+$(document).ready(function() {
+    setEqualHeight($(".section-2--blocks"));
+    setEqualHeight($(".section-6--blocks"));
+    setEqualHeight($(".section-7--blocks"));
+    setEqualHeight($(".section-8--blocks"));
+    setEqualHeight($(".section-10--blocks"));
+});
 
 // OwlCarousel - slider
 

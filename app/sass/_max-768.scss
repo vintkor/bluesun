@@ -16,6 +16,9 @@
 	    max-width: 360px;
 	    height: auto;
 	}
+	.header--phone {
+	    font-size: 52px;
+	}
 
 	/*--------------------- Section-1 --------------------*/
 
@@ -79,35 +82,6 @@
 	/*--------------------- Section-7 --------------------*/
 
 	.video {
-	    // position: relative;
-	    // width: 100%;
-	    // max-width: 840px;
-	    // //background: rgba(#d22, .5);
-	    // margin: 0 auto;
-	    // .section-7--hands {
-	    // 	width: 100%;
-	    // }
-	    // video {
-	    //     position: absolute;
-	    //     top: 26px;
-	    //     left: 190px;
-	    //     width: 100%;
-	    //     height: 100%;
-	    //     max-width: 477px;
-	    //     max-height: 358px;
-	    // }
-	    // #playpause {
-	    //     position: absolute;
-	    //     top: 145px;
-	    //     left: 230px;
-	    //     width: 400px;
-	    //     height: 100px;
-	    //     background: url("../img/play.png");
-	    //     &:hover {
-	    //         cursor: pointer;
-	    //         background: url("../img/play-hover.png");
-	    //     }
-	    // }
 	    display: none;
 	}
 
@@ -124,24 +98,72 @@
 	/*--------------------- Section-9 --------------------*/
 
 	.section-9 {
-	    overflow: scroll;
+	    // overflow: scroll;
 	}
 
 	.section-9--table {
-	    thead {
-	        td {
-	            padding: 20px;
-	        }
-	    }
-	    tbody {
-	        td {
-	            padding: 10px;
-	            &:last-child {
-	                padding-left: 56px;
-	            }
-	        }
-	    }
-	}
+    background: #eaf9fd;
+    // box-shadow: 0 0 25px rgba(#000, .1);
+    width: 100%;
+    // margin-bottom: 380px;
+    thead {
+        // font-family: "OpenSans-Light";
+        // vertical-align: middle;
+        td {
+            font-size: 12px;
+            padding: 10px;
+            &:nth-child(1) {
+                // color: #afafaf;
+                font-size: 12px;
+            }
+            &:nth-child(2),
+            &:nth-child(3) {
+                // color: #303030;
+                span {
+                    // font-family: "OpenSans-ExtraBold";
+                    font-size: 12px;
+                }
+            }
+            &:nth-child(3) {
+            }
+        }
+    }
+    tbody {
+        tr {
+            // border-bottom: 1px solid #d2e5e1;
+            &:last-child {
+                // border: none;
+                td {
+                    &:nth-child(1),
+                    &:nth-child(2) {
+                        // font-family: "OpenSans-Extrabold";
+                    }
+                }
+            }
+        }
+        td {
+            padding: 10px;
+            &:last-child {
+                // background: $white;
+                // font-family: "OpenSans-Bold";
+                padding-left: 10px;
+                font-size: 14px;
+            }
+            &:first-child {
+                // font-family: "OpenSans-Regular";
+                font-size: 12px;
+            }
+            &:nth-child(2) {
+                // font-family: "OpenSans-Bold";
+                font-size: 12px;
+                // text-align: center;
+            }
+            .tada {
+                // display: inline-block;
+            }
+        }
+    }
+}
 
 	/*--------------------- Section-10 -------------------*/
 

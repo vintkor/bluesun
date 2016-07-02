@@ -104,6 +104,8 @@ header {
     position: relative;
     z-index: 1;
     display: block;
+    width: 100%;
+    height: auto;
     &:after {
         content: "";
         position: absolute;
@@ -632,13 +634,16 @@ h1 {
                 display: inline-block;
             }
         }
+        .last td {
+            background: #eaf9fd;
+            padding: 10px;
+            vertical-align: middle;
+            text-align: right;
+            p {
+                margin-bottom: 0;
+            }
+        }
     }
-}
-
-.bank {
-    position: absolute;
-    right: 0;
-    top: 50%;
 }
 
 /*--------------------- Section-10 -------------------*/

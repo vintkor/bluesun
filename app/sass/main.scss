@@ -868,6 +868,22 @@ footer {
     }
 }
 
+#myModal5,
+#myModal6,
+#myModal7,
+#myModal8,
+#myModal9 {
+    text-align: center;
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+#privat {
+    font-family: "Roboto-Black";
+}
+
 /*--------------------- Media Query ------------------*/
 
 @import "_max-992";

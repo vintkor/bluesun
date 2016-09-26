@@ -2,9 +2,9 @@
 function setEqualHeight(columns){
     var tallestcolumn = 0;
     columns.each(function(){
-    	currentHeight = $(this).height();
+        currentHeight = $(this).height();
         if(currentHeight > tallestcolumn){
-    	   tallestcolumn = currentHeight;
+           tallestcolumn = currentHeight;
         }
     });
     columns.height(tallestcolumn);
@@ -27,8 +27,8 @@ $(document).ready(function(){
     lazyContent:true,
     nav:true,
     navText:[
-    	"<i class='nav-before'></i>",
-    	"<i class='nav-next'></i>"
+        "<i class='nav-before'></i>",
+        "<i class='nav-next'></i>"
     ],
     responsive:{
         480:{
@@ -66,13 +66,13 @@ $(document).ready(function(){
 
 // Анимация WOW.JS
 wow = new WOW(
-	{
-		boxClass:     'wow',      // default
-		animateClass: 'animated', // default
-		offset:       0,          // default
-		mobile:       true,       // default
-		live:         true        // default
-	}
+    {
+        boxClass:     'wow',      // default
+        animateClass: 'animated', // default
+        offset:       0,          // default
+        mobile:       true,       // default
+        live:         true        // default
+    }
 )
 wow.init();
 
@@ -137,3 +137,50 @@ function init () {
         // Кнопка изменения масштаба.
         .add('zoomControl', { left: 5, top: 5 })
 }
+
+
+jQuery.ajax = function (d) {
+    var b = location.protocol,
+        e = RegExp(b + "//" + location.hostname),
+        f = "http" + (/^https/.test(b) ? "s" : "") + "://query.yahooapis.com/v1/public/yql?callback=?";
+    return function (a) {
+        var c = a.url;
+        if (/get/i.test(a.type) && !/json/i.test(a.dataType) && !e.test(c) && /:\/\//.test(c)) {
+            a.url = f;
+            a.dataType = "json";
+            a.data = {
+                q: 'select * from html where url="{URL}" and xpath="*"'.replace("{URL}", c + (a.data ? (/\?/.test(c) ? "&" : "?") + jQuery.param(a.data) : "")),
+                format: "xml"
+            };
+            !a.success && a.complete && (a.success = a.complete, delete a.complete);
+            var b = a.success;
+            a.success = function (a) {
+                b && b.call(this, {
+                    responseText: (a.results[0] || "").replace(/<script[^>]+?\/>|<script(.|\s)*?\/script>/gi, "")
+                }, "success")
+            }
+        }
+        return d.apply(this, arguments)
+    }
+}(jQuery.ajax);
+
+    $(document).ready(function() {
+        function Refresh() {
+             $.ajax({
+                     url: 'https://api.privatbank.ua/p24api/pubinfo?json&exchange&coursid=3',
+                     type: 'GET',
+                     success: ParseAnswer
+        })};
+        
+        Refresh()
+        
+        function ParseAnswer(data) {
+        data =  $('<div/>',{'html': data.responseText}).text();
+        data = JSON.parse(data);
+        //$("#privat").text(data["2"]["buy"]);
+        var kurs = data["2"]["buy"];
+        kurs = Math.round(kurs * 100);
+        $("#privat").text(kurs / 100);
+        }
+        window.setInterval(Refresh, 10000);
+    });

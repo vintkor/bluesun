@@ -729,6 +729,23 @@ footer {
     border-color: #363636;
     color: #363636; }
 
+#myModal5,
+#myModal6,
+#myModal7,
+#myModal8,
+#myModal9 {
+  text-align: center; }
+  #myModal5 img,
+  #myModal6 img,
+  #myModal7 img,
+  #myModal8 img,
+  #myModal9 img {
+    max-width: 100%;
+    height: auto; }
+
+#privat {
+  font-family: "Roboto-Black"; }
+
 /*--------------------- Media Query ------------------*/
 @media (max-width: 992px) {
   /*--------------------- Header -----------------------*/
